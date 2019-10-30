@@ -212,55 +212,60 @@
   </head>
   <body>
     <div class="testbox">
-    <form>
+	    <!-- ************** ON SUBMIT EVENT LISTENER IN <form> TO HIT A FILE ************** 
+            <form action="helloworld.php" method="post">
+               -->
+    <form name="userinfo" onsubmit="alert('The form is submitted')" action="">
       <br/>
       <fieldset>
         <legend>Registration Form</legend>
         <div class="colums">
           <div class="item">
             <label for="fname">First Name<span>*</span></label>
-            <input id="fname" type="text" name="fname" />
+            <input id="fname" type="text" name="fname"  pattern="[A-Za-z\s]{1,40}" title = "Must Contain Alphabets and Space"  required/>
           </div>
           <div class="item">
             <label for="lname"> Last Name<span>*</span></label>
-            <input id="lname" type="text" name="lname" />
+            <input id="lname" type="text" name="lname" required pattern="[A-Za-z\s]{1,30}" title = "Must Contain Alphabets and Space" />
           </div>
           <div class="item">
             <label for="eaddress">Email Address<span>*</span></label>
-            <input id="eaddress" type="email"   name="eaddress" />
+            <input id="eaddress" type="email"   name="eaddress" required />
+          </div>
+          <div class="item">
+            <label for="username">username<span>*</span></label>
+            <input id="username" type="text"   name="username" required />
           </div>
           <div class="item">
             <label for="password">Password<span>*</span></label>
-            <input id="password" type="password"   name="password" />
-          </div>
+            <input id="password" type="password"   name="password" required />
           </div>
           <div class="item">
             <label for="type"> Account Type<span>*</span></label>
             <br/>
-            <select>
-            	<option value="Select">Select One</option>
+            <select style="width: 100% !important" required>
+            	<option selected disabled value="">Select One</option>
             	<option value="tutor">Tutor</option>
             	<option value="student">Student</option>
             </select>
           </div>
-          <div class = "colums">
           <div class="item">
             <label for="dobname">Date of Birth<span>*</span></label>
-            <input id="dob" type="date" name="dob" />
+            <input id="dob" type="date" name="dob" required />
           </div>
           <div class="item">
             <label for="gender"> Gender<span>*</span></label>
             <br/>
-            <select>
-            	<option value="Select">Select One</option>
+            <select style="width: 100% !important" required>
+            	<option selected disabled value="" >Select One</option>
             	<option value="male">Female</option>
             	<option value="female">Male</option>
-            </select>
+            </select >
           </div>
           </div>
            <div class="item">
       		<label for="address1">Address 1 <span> * </span></label>
-      		<textarea id="address1" rows="1"></textarea>
+      		<textarea id="address1" rows="1" required></textarea>
       	   </div>
           <div class="item">
             <label for="address2">Address 2</label>
@@ -269,29 +274,29 @@
           <div class="colums">
           <div class="item">
             <label for="city">City <span>*</span></label>
-            <input id="city" type="text"   name="city" />
+            <input id="city" type="text"   name="city" required pattern="[A-Za-z\s]{1,30}" title = "Must Contain Alphabets and Space"  />
           </div>
           <div class="item">
             <label for="zip">Zip/Postal Code <span>*</span></label>
-            <input id="zip" type="text"   name="zip" />
+            <input id="zip" type="text"   name="zip" required pattern="[0-9]{5}" title = "Must Contain 5 Numbers" />
           </div>
           <div class="item">
             <label for="country">Country <span>*</span></label>
-            <input id="country" type="text"   name="text" />
+            <input id="country" type="text"   name="text" required pattern="[A-Za-z\s]{1,30}" title = "Must Contain Alphabets and Space" />
           </div>
           <div class="item">
             <label for="phone">Phone Number <span>*</span></label>
-            <input id="phone" type="tel"   name="phone"/>
+            <input id="phone" type="tel"   name="phone" required pattern="[0-9]{1,10}" title = "Must Contain 10 Numbers" />
           </div>
           <div class="item">
       		<label for="wage">Wage <span>*</span></label>
-      		<input id="wage" type="number"  name="wage" />
+      		<input id="wage" type="number"  name="wage" required />
           </div>
           <div class="item">
             <label for="gender"> Education Level <span>*</span></label>
             <br/>
-            <select>
-            	<option value="Select">Select One</option>
+            <select style="width: 100% !important" required>
+            	<option selected disabled value="">Select One</option>
                 <option value="highschool"> High School</option>
             	<option value="bachelors"> Bachelors</option>
             	<option value="masters"> Masters</option>

@@ -328,5 +328,3 @@
   </body>
 </html>
 
-
-<Form Name ="form1" Method ="POST" ACTION = "RegistrationStart.php">

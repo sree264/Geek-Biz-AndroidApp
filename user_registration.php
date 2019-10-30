@@ -237,16 +237,16 @@
           <div class="item">
             <label for="type"> Account Type<span>*</span></label>
             <br/>
-            <select>
+            <select required>
             	<option value="Select">Select One</option>
             	<option value="tutor">Tutor</option>
             	<option value="student">Student</option>
-            </select required>
+            </select >
           </div>
           <div class = "colums">
           <div class="item">
             <label for="dobname">Date of Birth<span>*</span></label>
-            <input id="dob" type="date" name="dob" />
+            <input id="dob" type="date" name="dob" required/>
           </div>
           <div class="item">
             <label for="gender"> Gender<span>*</span></label>
@@ -255,7 +255,7 @@
             	<option value="Select">Select One</option>
             	<option value="male">Female</option>
             	<option value="female">Male</option>
-            </select required>
+            </select>
           </div>
           </div>
            <div class="item">

@@ -219,11 +219,11 @@
         <div class="colums">
           <div class="item">
             <label for="fname">First Name<span>*</span></label>
-            <input id="fname" type="text" name="fname" required />
+            <input id="fname" type="text" name="fname" required pattern="^[A-Za-z\s]+${30}" title = "Must Contain Alphabets and Space"  />
           </div>
           <div class="item">
             <label for="lname"> Last Name<span>*</span></label>
-            <input id="lname" type="text" name="lname" required />
+            <input id="lname" type="text" name="lname" required pattern="^[A-Za-z\s]+${30}" title = "Must Contain Alphabets and Space" />
           </div>
           <div class="item">
             <label for="eaddress">Email Address<span>*</span></label>
@@ -237,25 +237,25 @@
           <div class="item">
             <label for="type"> Account Type<span>*</span></label>
             <br/>
-            <select required>
+            <select style="width: 500px !important" required>
             	<option value="Select">Select One</option>
             	<option value="tutor">Tutor</option>
             	<option value="student">Student</option>
-            </select >
+            </select>
           </div>
           <div class = "colums">
           <div class="item">
             <label for="dobname">Date of Birth<span>*</span></label>
-            <input id="dob" type="date" name="dob" required/>
+            <input id="dob" type="date" name="dob" required />
           </div>
           <div class="item">
             <label for="gender"> Gender<span>*</span></label>
             <br/>
-            <select required>
+            <select style="width: 240px !important" required>
             	<option value="Select">Select One</option>
             	<option value="male">Female</option>
             	<option value="female">Male</option>
-            </select>
+            </select >
           </div>
           </div>
            <div class="item">
@@ -269,19 +269,19 @@
           <div class="colums">
           <div class="item">
             <label for="city">City <span>*</span></label>
-            <input id="city" type="text"   name="city" required />
+            <input id="city" type="text"   name="city" required pattern="^[A-Za-z\s]+${30}" title = "Must Contain Alphabets and Space"  />
           </div>
           <div class="item">
             <label for="zip">Zip/Postal Code <span>*</span></label>
-            <input id="zip" type="text"   name="zip" required />
+            <input id="zip" type="text"   name="zip" required pattern="[0-9]{6}" title = "Must Contain Numbers" />
           </div>
           <div class="item">
             <label for="country">Country <span>*</span></label>
-            <input id="country" type="text"   name="text" required />
+            <input id="country" type="text"   name="text" required pattern="^[A-Za-z\s]+${30}" title = "Must Contain Alphabets and Space" />
           </div>
           <div class="item">
             <label for="phone">Phone Number <span>*</span></label>
-            <input id="phone" type="tel"   name="phone" required />
+            <input id="phone" type="tel"   name="phone" required pattern="[0-9]{10}" title = "Must Contain Numbers" />
           </div>
           <div class="item">
       		<label for="wage">Wage <span>*</span></label>
@@ -290,7 +290,7 @@
           <div class="item">
             <label for="gender"> Education Level <span>*</span></label>
             <br/>
-            <select required>
+            <select style="width: 240px !important" required>
             	<option value="Select">Select One</option>
                 <option value="highschool"> High School</option>
             	<option value="bachelors"> Bachelors</option>

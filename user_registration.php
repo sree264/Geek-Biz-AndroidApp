@@ -237,7 +237,7 @@
           <div class="item">
             <label for="type"> Account Type<span>*</span></label>
             <br/>
-            <select style="width: 500px !important" required>
+            <select style="width: 100% !important" required>
             	<option value="Select">Select One</option>
             	<option value="tutor">Tutor</option>
             	<option value="student">Student</option>
@@ -251,7 +251,7 @@
           <div class="item">
             <label for="gender"> Gender<span>*</span></label>
             <br/>
-            <select style="width: 240px !important" required>
+            <select style="width: 100% !important" required>
             	<option value="Select">Select One</option>
             	<option value="male">Female</option>
             	<option value="female">Male</option>
@@ -290,7 +290,7 @@
           <div class="item">
             <label for="gender"> Education Level <span>*</span></label>
             <br/>
-            <select style="width: 240px !important" required>
+            <select style="width: 100% !important" required>
             	<option value="Select">Select One</option>
                 <option value="highschool"> High School</option>
             	<option value="bachelors"> Bachelors</option>

@@ -273,7 +273,7 @@
           </div>
           <div class="item">
             <label for="zip">Zip/Postal Code <span>*</span></label>
-            <input id="zip" type="text"   name="zip" required pattern="[0-9]{6}" title = "Must Contain Numbers" />
+            <input id="zip" type="text"   name="zip" required pattern="[0-9]{5}" title = "Must Contain Numbers" />
           </div>
           <div class="item">
             <label for="country">Country <span>*</span></label>

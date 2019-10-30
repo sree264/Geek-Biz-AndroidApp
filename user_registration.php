@@ -219,19 +219,19 @@
         <div class="colums">
           <div class="item">
             <label for="fname">First Name<span>*</span></label>
-            <input id="fname" type="text" name="fname" />
+            <input id="fname" type="text" name="fname" required />
           </div>
           <div class="item">
             <label for="lname"> Last Name<span>*</span></label>
-            <input id="lname" type="text" name="lname" />
+            <input id="lname" type="text" name="lname" required />
           </div>
           <div class="item">
             <label for="eaddress">Email Address<span>*</span></label>
-            <input id="eaddress" type="email"   name="eaddress" />
+            <input id="eaddress" type="email"   name="eaddress" required />
           </div>
           <div class="item">
             <label for="password">Password<span>*</span></label>
-            <input id="password" type="password"   name="password" />
+            <input id="password" type="password"   name="password" required />
           </div>
           </div>
           <div class="item">
@@ -241,7 +241,7 @@
             	<option value="Select">Select One</option>
             	<option value="tutor">Tutor</option>
             	<option value="student">Student</option>
-            </select>
+            </select required>
           </div>
           <div class = "colums">
           <div class="item">
@@ -251,16 +251,16 @@
           <div class="item">
             <label for="gender"> Gender<span>*</span></label>
             <br/>
-            <select>
+            <select required>
             	<option value="Select">Select One</option>
             	<option value="male">Female</option>
             	<option value="female">Male</option>
-            </select>
+            </select required>
           </div>
           </div>
            <div class="item">
       		<label for="address1">Address 1 <span> * </span></label>
-      		<textarea id="address1" rows="1"></textarea>
+      		<textarea id="address1" rows="1" required></textarea>
       	   </div>
           <div class="item">
             <label for="address2">Address 2</label>
@@ -269,28 +269,28 @@
           <div class="colums">
           <div class="item">
             <label for="city">City <span>*</span></label>
-            <input id="city" type="text"   name="city" />
+            <input id="city" type="text"   name="city" required />
           </div>
           <div class="item">
             <label for="zip">Zip/Postal Code <span>*</span></label>
-            <input id="zip" type="text"   name="zip" />
+            <input id="zip" type="text"   name="zip" required />
           </div>
           <div class="item">
             <label for="country">Country <span>*</span></label>
-            <input id="country" type="text"   name="text" />
+            <input id="country" type="text"   name="text" required />
           </div>
           <div class="item">
             <label for="phone">Phone Number <span>*</span></label>
-            <input id="phone" type="tel"   name="phone"/>
+            <input id="phone" type="tel"   name="phone" required />
           </div>
           <div class="item">
       		<label for="wage">Wage <span>*</span></label>
-      		<input id="wage" type="number"  name="wage" />
+      		<input id="wage" type="number"  name="wage" required />
           </div>
           <div class="item">
             <label for="gender"> Education Level <span>*</span></label>
             <br/>
-            <select>
+            <select required>
             	<option value="Select">Select One</option>
                 <option value="highschool"> High School</option>
             	<option value="bachelors"> Bachelors</option>

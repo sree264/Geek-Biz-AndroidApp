@@ -11,7 +11,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-10 col-sm-offset-1">
-		<h4>Teacher Registration Form</h4>
+		<h4>Tutor Registration Form</h4>
 			<form action="/panditslist.php" method="POST" enctype="multipart/form-data">
 
 				<div class="form-group">
